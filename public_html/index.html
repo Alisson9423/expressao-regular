@@ -48,30 +48,38 @@
           <p class=""><b>M</b></p>
         </div>
           <div class="col-md-8">
+              <!-- 
+              pattern e utilizado para validar campo input
+              \d = um digito 
+              \d{8} = 8 digito   
+              ? pode ou não ter
+              
+              -->
+              
                 <form class="" method="post" action="https://formspree.io/">
                     <div class="form-group"> 
                         <label>Nome </label>
-                        <input type="email" nmae="email" class="form-control" placeholder="Enter email"> 
+                        <input type="text" name="email" class="form-control" placeholder="Nome"> 
                     </div>
                     
                     <div class="form-group"> 
                         <label>Email</label>
-                        <input type="password" nmae="password" class="form-control" placeholder="Password"> 
+                        <input type="email" name="password" class="form-control" placeholder="Email"> 
                     </div>
                     
                     <div class="form-group"> 
                         <label>CPF</label>
-                        <input type="email" nmae="email" class="form-control" placeholder="Enter email"> 
+                        <input type="text" name="email" class="form-control" required="required" placeholder="CPF" pattern="\d{11}"> 
                     </div>
                     
                     <div class="form-group"> 
                         <label>Telefone</label>
-                        <input type="password" nmae="password" class="form-control" placeholder="Password"> 
+                        <input type="password" name="password" class="form-control" placeholder="Telefone"> 
                     </div>
                     
                     <div class="form-group"> 
                         <label>CEP</label>
-                        <input type="email" nmae="email" class="form-control" placeholder="Enter email">
+                        <input type="text" name="email" class="form-control" placeholder="CEP" required="required" pattern="\d{5}-?\d{3}" > 
                     </div>
                     
                     <div class="form-group"> 
